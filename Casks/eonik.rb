@@ -12,8 +12,8 @@ cask "eonik" do
     end
   end
   on_intel do
-    version "0.5.0"
-    sha256 "1d96eeb9ef4fd7d43373161fcb15c51d5b17ae625e1634c95cb4364b0aad6035"
+    version "0.6.0"
+    sha256 "1e46a38367f48ce61f425aa9fd722067c00ec393c26fc4aeab74e3d058c9f0ef"
 
     livecheck do
       url "https://dl.eonik.ai/intel/appcast.xml"
