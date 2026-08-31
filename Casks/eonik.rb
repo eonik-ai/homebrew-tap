@@ -3,8 +3,8 @@ cask "eonik" do
   arch arm: "", intel: "intel/"
 
   on_arm do
-    version "0.6.0"
-    sha256 "d063caeea4cdec4fadce00936feca594392319ac9558e1bb280d7e03e2417a92"
+    version "0.7.0"
+    sha256 "7b98fcd8d3ba6ca131a55c72dfbeaaa7b6257f15af2f33151b30f4a29b9af05b"
 
     livecheck do
       url "https://dl.eonik.ai/appcast.xml"
@@ -12,8 +12,8 @@ cask "eonik" do
     end
   end
   on_intel do
-    version "0.6.0"
-    sha256 "1e46a38367f48ce61f425aa9fd722067c00ec393c26fc4aeab74e3d058c9f0ef"
+    version "0.7.0"
+    sha256 "e6c692329c79d075f99e7b925e4bbf5b2070732379bee67b93b5dc42264b180b"
 
     livecheck do
       url "https://dl.eonik.ai/intel/appcast.xml"
@@ -31,6 +31,10 @@ cask "eonik" do
   depends_on macos: :sequoia
 
   app "eonik.app"
+  # The `eonik` shell command. It ships INSIDE the bundle, so brew links the same file
+  # `install.sh` symlinks and the app's menu item installs — one implementation, three doors.
+  # Homebrew already owns a directory on PATH, so a cask user needs no shell-config edit at all.
+  binary "#{appdir}/eonik.app/Contents/Resources/eonik"
 
   uninstall quit: "io.eonik.app"
 
