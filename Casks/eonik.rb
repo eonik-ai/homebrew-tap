@@ -3,8 +3,8 @@ cask "eonik" do
   arch arm: "", intel: "intel/"
 
   on_arm do
-    version "0.9.0"
-    sha256 "95906b714be80fa27258dd8c8e0c96245916219dff6b5daa20cd6735ee77c92e"
+    version "0.10.0"
+    sha256 "ef5771184f13c4ac009435f4350d9e5b8620eba02c3c1eacc2c0f16a496bc573"
 
     livecheck do
       url "https://dl.eonik.ai/appcast.xml"
@@ -12,8 +12,8 @@ cask "eonik" do
     end
   end
   on_intel do
-    version "0.9.0"
-    sha256 "ccda5ab3141923c3aa477c31a09e371ec20705464844e1ae7f933db15bf08e81"
+    version "0.10.0"
+    sha256 "60f7b98e90c7ebb768452a9640928f53b779f7802197d0aeb0e3eafaea8c5910"
 
     livecheck do
       url "https://dl.eonik.ai/intel/appcast.xml"
