@@ -3,8 +3,8 @@ cask "eonik" do
   arch arm: "", intel: "intel/"
 
   on_arm do
-    version "0.12.0"
-    sha256 "bea929a551c3751ac0bca7b28c09847d1b1fbdef2e04cf2bf13a3865745165b2"
+    version "0.13.0"
+    sha256 "3d90ca03f26f27e3c85cb7405de749002d821eb4633ea096d60a8d8575c6ad81"
 
     livecheck do
       url "https://dl.eonik.ai/appcast.xml"
@@ -12,8 +12,8 @@ cask "eonik" do
     end
   end
   on_intel do
-    version "0.12.0"
-    sha256 "5e233f22137cd513fdf981b78712f9ec9af6da18f56bde3d05c763ed922b51ac"
+    version "0.13.0"
+    sha256 "716203cccdc1183d734949b2ce8b2b9abef9b96a3e29361a5d20e11cbfb602c8"
 
     livecheck do
       url "https://dl.eonik.ai/intel/appcast.xml"
@@ -21,8 +21,7 @@ cask "eonik" do
     end
   end
 
-  url "https://dl.eonik.ai/#{arch}eonik-#{version}.dmg",
-      verified: "dl.eonik.ai/"
+  url "https://dl.eonik.ai/#{arch}eonik-#{version}.dmg"
   name "eonik"
   desc "Mac-native editor for finished, on-brand ads"
   homepage "https://www.eonik.ai/"
